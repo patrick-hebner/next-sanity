@@ -6,6 +6,9 @@ import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const revalidate = 5;
+export const fetchCache = "force-no-store";
+
 export const metadata: Metadata = {
   title: "My awesome site",
   description: "With next and sanity"
